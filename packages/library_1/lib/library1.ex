@@ -9,10 +9,10 @@ defmodule Library1 do
   ## Examples
 
       iex> Library1.hello()
-      :world
+      "Howdy"
 
   """
   def hello do
-    :world
+    "Howdy"
   end
 end

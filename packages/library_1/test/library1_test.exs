@@ -3,6 +3,6 @@ defmodule Library1Test do
   doctest Library1
 
   test "greets the world" do
-    assert Library1.hello() == :world
+    assert Library1.hello() == "Howdy"
   end
 end
