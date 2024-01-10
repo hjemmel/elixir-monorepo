@@ -1,0 +1,12 @@
+type: library
+language: elixir
+
+project:
+  name: "Library 1"
+  description: "The first of it's kind"
+  owner: "@hjemmel"
+  maintainers: ["hjemmel"]
+
+tasks:
+  test:
+    command: "mix test"
