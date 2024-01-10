@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+
+env:
+  MIX_ENV: test
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Lint & Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "26.2.1"
+          elixir-version: "1.16.0-otp-26"
+
+      - uses: moonrepo/setup-toolchain@v0
+      - run: moon run :test
